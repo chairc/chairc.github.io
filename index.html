@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+    <title>Yu Chen's Home (陈宇个人主页)</title>
+    <meta name="AUTHOR" content="Home page of Yu Chen">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
+        name="viewport" />
+</head>
+
+<script type="text/javascript">
+
+    var phoneWidth = parseInt(window.screen.width);
+
+    var phoneScale = phoneWidth / 640;
+
+    var ua = navigator.userAgent;
+
+    if (/Android (d+.d+)/.test(ua)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+            document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+        } else {
+            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+        }
+    } else { document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">'); }
+
+</script>
+
+<style>
+    ul li {
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div style=font-size:18px>
+        <div class="swidth" style="padding-right: 50px;  padding-left: 50px;">
+
+            <center>
+                <h1>Yu Chen (陈宇)</h1>
+            </center>
+            <hr>
+
+            <table width="100%">
+                <tr>
+                    <td>
+                        <p>
+                        <h2>R&D Engineer, Master Degree, Open Source</h2>
+                        Key Laboratory of Computing Power Network and Information Security, Ministry of Education,<br>
+                        <a href="http://www.scsc.cn/">Shandong Computer Science Center</a> <a
+                            href="https://www.nsccjn.cn/">(National Supercomputer Center in Jinan),</a><br>
+                        <a href="https://www.qlu.edu.cn/">Qilu University of Technology (Shandong Academy of
+                            Sciences)</a><br>
+                        </p>
+
+                        <p>
+                            Email: chenyu1998424 [at] gmail [dot] com / chairc1998 [at] 163 [dot] com<br>
+                        </p>
+
+                        <p>
+                            Location: Jinan, Shandong province, China
+                        </p>
+
+                        <p>
+                            Curriculum Vitae <strong>[<a href="#">en</a>]</strong>
+                            <strong>[<a href="#">中文</a>]</strong>
+                        </p>
+
+                        <p>
+                            Github: <a href="https://github.com/chairc">chairc</a><br>
+                            CSDN: <a href="https://blog.csdn.net/qq_43226466">小虚无</a><br>
+                            ORCID: <a href="https://orcid.org/0000-0002-2026-8018">0000-0002-2026-8018</a><br>
+                            Blog: <a
+                                href="https://github.com/chairc/chairc.github.io/blob/main/README.md">README.md</a><br>
+                            Website: <a href="https://chairc.cn">chairc.cn</a><br>
+                        </p>
+                    </td>
+                    <td>
+                        <img src="assets/me.jpg" alt="monaco" align="right" height="240" width="180" hspace="4"
+                            vspace="10">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+
+            <h2>Project Experience</h2>
+            <h3>2023</h3>
+            <ul>
+                <li>
+                    <p>2023.06 - Present&nbsp;&nbsp;&nbsp;<strong>IDDM Distributed Defect Generation
+                            Model</strong>&nbsp;&nbsp;&nbsp;Development Language: Python<br><br>
+                        <strong>Project Description</strong>: This system is an open-source distributed deep learning
+                        image generation model (AIGC).<br>
+                        <strong>Technology Stack</strong>: PyTorch + Distributed<br>
+                        <strong>Project Content</strong>: The IDDM distributed defect generation model provides
+                        non-repetitive industrial defect images based on DDPM and DDIM algorithms. The model uses DDP
+                        distributed training technology to communicate across 6 RTX 6000 GPUs, enabling large-memory
+                        multi-GPU training. It has garnered 40+ stars on GitHub.<br>
+                        <strong>Project Link</strong>: <a
+                            href="https://github.com/chairc/Industrial-Defect-Diffusion-Model">https://github.com/chairc/Industrial-Defect-Diffusion-Model</a>
+                    </p>
+                </li>
+                <li>
+                    <p>2023.06 - Present&nbsp;&nbsp;&nbsp;<strong>Wood Defect Online Detection
+                            Platform</strong>&nbsp;&nbsp;&nbsp;Development Language: Java, Python<br><br>
+                        <strong>Project Description</strong>: Major Science and Technology Innovation Project of
+                        Shandong Province.<br>
+                        <strong>Technology Stack</strong>: SpringBoot + MySQL + MyBatis + VUE + PyTorch + TensorRT +
+                        Linux + Tomcat<br>
+                        <strong>Project Content</strong>: Completed the front-end and back-end systems of the wood
+                        defect online detection platform based on the SpringBoot framework and related technologies. The
+                        deep learning detection system is implemented using the PyTorch framework and the YOLOX
+                        algorithm. Communication between SpringBoot and Python is achieved using Socket ports. The
+                        project includes the development of a dataset generation model based on the diffusion model, as
+                        well as one-stage deep learning detection. The accuracy of wood detection is over 90%, and the
+                        detection speed can reach 100 frames per second.<br>
+                        <strong>Project Link</strong>: <a
+                            href="https://github.com/chairc/NRSD-MN-relabel">https://github.com/chairc/NRSD-MN-relabel</a>
+                    </p>
+                </li>
+                <li>
+                    <p>2023.03 - 2022.06&nbsp;&nbsp;&nbsp;<strong>GomROS Community
+                            Platform</strong>&nbsp;&nbsp;&nbsp;Development Language: Java<br><br>
+                        <strong>Project Description</strong>: The system is a B/S architecture developer community for
+                        users of the GomROS operating system, providing a community platform for communication,
+                        learning, and collaboration.<br>
+                        <strong>Technology Stack</strong>: SpringBoot + MySQL + MyBatis + Shiro + VUE + Linux +
+                        Tomcat<br>
+                        <strong>Project Content</strong>: Developed and maintained the GomROS community platform based
+                        on the SpringBoot framework and related technologies. Designed multi-user and multi-permission
+                        with the Shiro security framework to ensure that users can access relevant transactions without
+                        overstepping their authority. Implemented an online chat room function using WebSocket. Worked
+                        on the deployment of the Tomcat server on Linux. The platform meets basic communication,
+                        learning, and collaboration requirements.<br>
+                        <strong>Project Link</strong>: <a
+                            href="http://124.70.86.111:8096/bbs/index/index">http://124.70.86.111:8096/bbs/index/index</a>
+                    </p>
+                </li>
+            </ul>
+
+            <h3>2022</h3>
+            <ul>
+                <li>
+                    <p>2022.12 - 2023.03&nbsp;&nbsp;&nbsp;<strong>GomROS Cloud
+                            Platform</strong>&nbsp;&nbsp;&nbsp;Development Language: Java<br><br>
+                        <strong>Project Description</strong>: The system is a B/S architecture cloud platform management
+                        system, providing status monitoring, information collection, and analysis services for robot
+                        device management.<br>
+                        <strong>Technology Stack</strong>: SpringBoot + MySQL + MyBatis + Shiro + VUE + Linux +
+                        Tomcat<br>
+                        <strong>Project Content</strong>: Developed and maintained the data collection and analysis of
+                        the GomROS cloud platform based on the SpringBoot framework and related technologies. Achieved
+                        rapid loading of AGV maps through buffer pool technology. Completed custom automated database
+                        and table creation with splicing SQL. Implemented online monitoring and data collection for
+                        robot devices, with an average daily data volume of 1000 entries. Achieved message sending and
+                        receiving functionality between the front and back ends using WebSocket. Worked on the
+                        deployment of the Tomcat server on Linux.<br>
+                    </p>
+                </li>
+                <li>
+                    <p>2022.07 - 2022.11&nbsp;&nbsp;&nbsp;<strong>Sterilization Robot Target
+                            Detection</strong>&nbsp;&nbsp;&nbsp;Development Language: C++, Python<br><br>
+                        <strong>Project Description</strong>: Target detection module for sterilization robots, using
+                        computer vision for precise disinfection of door handles on embedded devices.<br>
+                        <strong>Technology Stack</strong>: PyTorch + TensorRT<br>
+                        <strong>Project Content</strong>: Developed the
+
+                        target detection module for sterilization robots using the YOLOv5 algorithm based on PyTorch
+                        code. This included functions such as detection data collection, labeling, training, etc.
+                        Deployed the engine model on embedded devices TX2 using C++ language and TensorRT. Achieved a
+                        detection rate of up to 60 frames per second in real-time detection, with an accuracy exceeding
+                        97%.<br>
+                    </p>
+                </li>
+            </ul>
+            <hr>
+
+            <h2>Research Interests</h2>
+            <p>
+                I'm currently working on computer vision and researching industrial defect detection.
+            </p>
+
+            <ul>
+                <li>
+                    Object detection for industrial defect
+                <li>
+                    Artificial intelligence generated content
+            </ul>
+
+            <p>
+                If you are interested in my research, project in github and any questions, please send me an email! <br>
+            </p>
+
+            <hr>
+
+            <h2>Working Experience</h2>
+            <ul>
+                <li>
+                    2024.7 - Future: Zhejiang Uniview Technologies Co., Ltd.
+                <li>
+                    <font color=gray>2022.01 - 2023.06: Shandong Alexander Intelligent Technology Co., Ltd.</font>
+                    (practice)
+            </ul>
+
+            <hr>
+
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    2021.09 - 2024.07: <a href="http://jsxb.scsc.cn/">Faculty of Computer Science and Technology</a>,
+                    <a href="https://www.qlu.edu.cn/">Qilu University of Technology (Shandong Academy of Sciences)</a>
+                    (Advisor: <a href="http://jsxb.scsc.cn/introlist_76/320.html">Huijuan Hao</a>)
+                <li>
+                    <font color=gray>2022.01 - 2024.07: <a href="https://www.mech.sdu.edu.cn/">School of Mechanical
+                            Engineering</a>,
+                        <a href="https://www.sdu.edu.cn/">Shandong University</a>
+                        (Advisor: <a href="https://www.mech.sdu.edu.cn/info/1127/121116.htm">Jun Zhou</a>, joint
+                        program)
+                    </font>
+
+                <li>
+                    2016.09 - 2021.07: <a href="https://www.ldu.edu.cn/">School of Information and Electrical
+                        Engineering</a>,
+                    <a href="http://www.xinke.ldu.edu.cn/">Ludong University</a>.
+            </ul>
+
+            <hr>
+
+            <h2>Awards</h2>
+
+            <h3>2023</h3>
+            <ul>
+                <li> 2023年 “齐鲁工业大学（山东省科学院）研究生学业一等奖学金”
+
+                <li> 2023年 “齐鲁工业大学（山东省科学院）学术之星”（仅10位）
+                    <strong>[<a href="awards/2023-2.pdf">pdf</a>]</strong>
+
+                <li> 2023年 第25届中国机器人及人工智能大赛 国家级二等奖
+                    <strong>[<a href="awards/2023-3.pdf">pdf</a>]</strong>
+
+                <li> 2023年 第25届中国机器人及人工智能大赛（山东赛区）暨“济南超算杯”第三届山东省机器人及人工智能大赛 山东省二等奖
+                    <strong>[<a href="awards/2023-4.pdf">pdf</a>]</strong>
+
+                <li> 2023年 第21届山东省大学生软件设计大赛 山东省二等奖”
+                    <strong>[<a href="awards/2023-5.pdf">pdf</a>]</strong>
+
+                <li> 2023年 山东省研究生“AI+”创新实践大赛 山东省优秀奖
+                    <strong>[<a href="awards/2023-6.pdf">pdf</a>]</strong>
+            </ul>
+
+            <h3>2022</h3>
+            <ul>
+                <li> 2022年 第20届山东省大学生软件设计大赛 山东省三等奖
+                    <strong>[<a href="awards/2022-1.pdf">pdf</a>]</strong>
+            </ul>
+
+            <h3>2021</h3>
+            <ul>
+                <li> 2021年 “齐鲁工业大学（山东省科学院）研究生学业三等奖学金”
+                    <strong>[<a href="awards/2021-1.pdf">pdf</a>]</strong>
+
+                <li> 2021年 鲁东大学2021届优秀毕业生
+                    <strong>[<a href="awards/2021-2.pdf">pdf</a>]</strong>
+            </ul>
+
+            <hr>
+
+            <h2>Patents</h2>
+            <ul>
+                <li> 基于改进YOLOX模型的工业瑕疵检测方法, CN202211358411.9 (实审)
+                <li> 基于二维码的固定视点手眼标定方法及系统, CN202211317859.6 (实审)
+                <li> 一种基于混合深度自编码的轴承故障新类识别与诊断方法, CN202310572685.6 (实审)
+                <li> 基于深度卷积生成对抗网络的轴承异常检测和故障诊断方法, CN202310489061.8 (实审)
+                <li> 基于掩膜的图像目标候选点筛选方法及系统, CN202211397613.4 (实审)
+                <li> DM二维码识别方法、AGV定位方法、系统及AGV, CN202211358411.9 (授权)
+                <li> 基于复合自动编码器的工业控制系统异常检测方法及系统, CN202310919286.2 (授权)
+                <li> 用于防疫机器人的门把手消杀控制方法及系统, CN202211358411.9 (实审)
+            </ul>
+
+            <hr>
+
+            <h2>Publications</h2>
+
+            <h3>2023</h3>
+            <ul>
+
+                <li><strong>AMFF-YOLOX: Towards an Attention Mechanism and Multiple Feature Fusion Based on YOLOX for
+                        Industrial Defect Detection</strong><br>
+                    <strong>Chen Y</strong>, Tang Y, Hao H, Zhou J, et al.<br>
+                    Electronics, 2023, 12(7): 1662.
+                    <strong>[<a href="https://www.mdpi.com/2079-9292/12/7/1662">website</a>]</strong>
+                    <strong>[<a href="https://www.mdpi.com/2079-9292/12/7/1662/pdf?version=1680268078">pdf</a>]</strong>
+
+
+                <li><strong>Novelty Detection and Fault Diagnosis Method for Bearing Faults Based on the Hybrid Deep
+                        Autoencoder Network</strong><br>
+                    Zhao Y, Hao H, <strong>Chen Y</strong>, et al.<br>
+                    Electronics, 2023, 12(13): 2826.
+                    <strong>[<a href="https://www.mdpi.com/2079-9292/12/13/2826">website</a>]</strong>
+                    <strong>[<a
+                            href="https://www.mdpi.com/2079-9292/12/13/2826/pdf?version=1687777449">pdf</a>]</strong>
+
+                <li><strong>Incremental Single-Class Fault Detection and Diagnosis Method for Rolling Bearings Based on
+                        OS-ELM</strong><br>
+                    Hao H, Zhao Y, <strong>Chen Y</strong>, et al.<br>
+                    Electronics, 2023, 12(19): 4099.
+                    <strong>[<a href="https://www.mdpi.com/2079-9292/12/19/4099">website</a>]</strong>
+                    <strong>[<a
+                            href="https://www.mdpi.com/2079-9292/12/19/4099/pdf?version=1696494764">pdf</a>]</strong>
+
+            </ul>
+
+            <h3>2022</h3>
+            <ul>
+
+                <li><strong>Intelligent Detection Method of Gearbox Based on Adaptive Hierarchical Clustering and
+                        Subset</strong><br>
+                    Yuan H, Tang Y, Hao H, Zhao Y, Zhang Y, <strong>Chen Y</strong>.<br>
+                    Computational Intelligence and Neuroscience, 2022, 2022.
+                    <strong>[<a href="https://www.hindawi.com/journals/cin/2022/6464516/">website</a>]</strong>
+
+                <li><strong>Intelligent monitoring and control system and control method of intelligent water
+                        meter</strong><br>
+                    Yuan H, Hao H, Zhao Y, Zhang Y, <strong>Chen Y</strong>.<br>
+                    2022 IEEE 6th Advanced Information Technology, Electronic and Automation Control Conference (IAEAC).
+                    IEEE, 2022: 226-229.
+                    <strong>[<a href="https://ieeexplore.ieee.org/document/9929669/">website</a>]</strong>
+
+
+                <li> <strong>Method for intelligently identifying underground safety accidents based on fully connected
+                        neural network</strong> <br>
+                    Yuan H, Hao H, Zhao Y, Zhang Y, <strong>Chen Y</strong>.<br>
+                    2022 IEEE 6th Information Technology and Mechatronics Engineering Conference (ITOEC). IEEE, 2022, 6:
+                    367-370.
+                    <strong>[<a href="https://ieeexplore.ieee.org/document/9734567/">website</a>]</strong>
+
+            </ul>
+
+            <hr>
+
+            <h2>Personal</h2>
+            <p>
+                Football, coding, fitness, travel and so on.
+            </p>
+            <hr>
+
+            <h2>Book</h2>
+            <ul>
+                <li>大数据技术及其应用研究 (writing 1 chapter), author Jun Zhou
+            </ul>
+
+</body>
+
+</html>
